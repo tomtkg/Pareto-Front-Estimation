@@ -1,4 +1,7 @@
 function PFE
+    cd(fileparts(mfilename('fullpath')));
+    addpath(genpath(cd));
+    
     %% EMO2021 paper
     Fig1();    % Example of the proposed Pareto front estimation procedure
     Fig2to3(); % Pareto front estimation in m = 2 objective case
