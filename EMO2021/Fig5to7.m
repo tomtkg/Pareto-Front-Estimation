@@ -29,7 +29,7 @@ function Fig5(P,A,e,name)
     set(gca,'Fontname','Times New Roman','FontSize',13,'NextPlot','add', ...
         'Color','none','Box','on','LooseInset',get(gca,'TightInset'), ...
         'View',[135 30]);
-    c = colorbar; caxis([0 0.16]);
+    c = colorbar; clim([0 0.16]);
     c.Label.String = 'Estimation error';
     c.Position = [0.86 0.05 0.04 0.88];
     
@@ -52,7 +52,7 @@ function Fig6(X,W,Yhat,name)
 
     set(gca,'Fontname','Times New Roman','FontSize',13,'NextPlot','add', ...
         'Color','none','Box','on','LooseInset',get(gca,'TightInset'));
-    c = colorbar; caxis([1 1.75]);
+    c = colorbar; clim([1 1.75]);
     c.Label.String = '\it L\rm^1 norm: ||\bf\itf\rm||';
     
     scatter(W(:,1),W(:,2),4,Yhat,'filled');
@@ -71,7 +71,7 @@ function Fig7(X,W,e,name)
 
     set(gca,'Fontname','Times New Roman','FontSize',13,'NextPlot','add', ...
         'Color','none','Box','on','LooseInset',get(gca,'TightInset'));
-    c = colorbar; caxis([0 0.16]);
+    c = colorbar; clim([0 0.16]);
     c.Label.String = 'Estimation error';
     
     scatter(W(:,1),W(:,2),4,e,'filled');
