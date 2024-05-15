@@ -47,7 +47,6 @@ function Fig(W,P,x,name)
     xlim([-0.05 1.05]); xlabel('\it f\rm_1','position',[0.4,1.2,-0.15]);
     ylim([-0.05 1.05]); ylabel('\it f\rm_2','position',[1.3 0.3 -0.2]);
     zlim([-0.05 1.05]); zlabel('\it f\rm_3','position',[0.4,-0.77,0.5],'Rotation',0);
-    zticks([0 0.5 1]); axis square;
-    exportgraphics(gcf,[name '.pdf']);
-    savefig([name '.fig']); close;
+    zticks([0 0.5 1]);
+    saveimage(name);
 end

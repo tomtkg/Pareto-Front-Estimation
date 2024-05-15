@@ -29,9 +29,7 @@ function Fig1a(P,X)
     text(-0.035,-0.015,'\bfz','FontSize',12);
     xlim([-0.05 1.17]); xlabel('\it f\rm_1');
     ylim([-0.05 1.17]); ylabel('\it f\rm_2');
-    axis square;
-    exportgraphics(gcf,'1a.pdf');
-    savefig('1a.fig'); close;
+    saveimage('1a');
 end
 
 function Fig1b(X,Y,Yhat,mse)
@@ -50,9 +48,7 @@ function Fig1b(X,Y,Yhat,mse)
     xlim([-0.05 1.05]); ylim([Min-d Max+d]);
     xlabel('\it L\rm^1 unit vector element: \ite\rm_1');
     ylabel('\it L\rm^1 norm: ||\bf\itf\rm||');
-    axis square;
-    exportgraphics(gcf,'1b.pdf');
-    savefig('1b.fig'); close;
+    saveimage('1b');
 end
 
 function Fig1c(P,Yhat,mse)
@@ -72,7 +68,5 @@ function Fig1c(P,Yhat,mse)
     legend([p3 p2 p1],str,'Box','off');
     xlim([-0.05 1.17]); xlabel('\it f\rm_1');
     ylim([-0.05 1.17]); ylabel('\it f\rm_2');
-    axis square;
-    exportgraphics(gcf,'1c.pdf');
-    savefig('1c.fig'); close;
+    saveimage('1c');
 end

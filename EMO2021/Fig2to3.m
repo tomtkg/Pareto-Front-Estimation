@@ -48,7 +48,5 @@ function Fig(W,P,TPF,pos,name)
     legend([p0, p3 p2 p1],str,'Box','off','Location',pos);
     xlim([-0.05 1.05]); xlabel('\it f\rm_1');
     ylim([-0.05 1.05]); ylabel('\it f\rm_2');
-    axis square;
-    exportgraphics(gcf,[name,'.pdf']);
-    savefig([name,'.fig']); close;
+    saveimage(name);
 end

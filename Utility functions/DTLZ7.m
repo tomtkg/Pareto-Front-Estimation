@@ -42,9 +42,7 @@ function Fig3a()
     legend([p0, p3 p2 p1],str,'Box','off','Location','southwest');
     xlim([-0.05 1.05]); xlabel('\it f\rm_1');
     ylim([-0.05 1.05]); ylabel('\it f\rm_2');
-    axis square;
-    exportgraphics(gcf,'3a.pdf');
-    savefig('3a.fig'); close;
+    saveimage('3a');
 end
 
 function Fig9a()
@@ -73,7 +71,6 @@ function Fig9a()
     xlim([-0.1 1.63]); xlabel('\it f\rm_1','position',[0.35 1.4 -0.27]);
     ylim([-0.1 1.63]); ylabel('\it f\rm_2','position',[1.4 0.35 -0.27]);
     zlim([-0.05 1.05]); zlabel('\it f\rm_3','position',[0.65 -1.2 0.54],'Rotation',0);
-    zticks([0 0.5 1]); axis square;
-    exportgraphics(gcf,'9a.pdf');
-    savefig('9a.fig'); close;
+    zticks([0 0.5 1]);
+    saveimage('9a');
 end

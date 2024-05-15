@@ -32,7 +32,6 @@ function Fig(W,P,TPF,name)
     legend([p0, p3 p2 p1],str,'Box','off');
     xlim([-0.225 4.725]); xlabel('\it f\rm_1');
     ylim([-0.225 4.725]); ylabel('\it f\rm_2');
-    xticks(0:0.5:4.5); axis square;
-    exportgraphics(gcf,[name,'.pdf']);
-    savefig([name,'.fig']); close;
+    xticks(0:0.5:4.5);
+    saveimage(name);
 end

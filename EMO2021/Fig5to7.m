@@ -42,9 +42,8 @@ function Fig5(P,A,e,name)
     xlim([0 1.3]); xlabel('\it f\rm_1','position',[0.3 1.3 -0.2]);
     ylim([0 1.3]); ylabel('\it f\rm_2','position',[1.3 0.3 -0.2]);
     zlim([0 1.3]); zlabel('\it f\rm_3','position',[0.5 -0.9 0.55],'Rotation',0);
-    zticks([0 0.5 1]); axis square;
-    exportgraphics(gcf,'5'+name+'.pdf');
-    savefig('5'+name+'.fig'); close;
+    zticks([0 0.5 1]);
+    saveimage(char('5'+name));
 end
 
 function Fig6(X,W,Yhat,name)
@@ -61,9 +60,7 @@ function Fig6(X,W,Yhat,name)
     
     xlim([0 1]); xlabel('\it L\rm^1 unit vector element: \ite\rm_1'); 
     ylim([0 1]); ylabel('\it L\rm^1 unit vector element: \ite\rm_2');
-    axis square;
-    exportgraphics(gcf,'6'+name+'.pdf');
-    savefig('6'+name+'.fig'); close;
+    saveimage(char('6'+name));
 end
 
 function Fig7(X,W,e,name)
@@ -80,7 +77,5 @@ function Fig7(X,W,e,name)
     
     xlim([0 1]); xlabel('\it L\rm^1 unit vector element: \ite\rm_1');
     ylim([0 1]); ylabel('\it L\rm^1 unit vector element: \ite\rm_2');
-    axis square;
-    exportgraphics(gcf,'7'+name+'.pdf');
-    savefig('7'+name+'.fig'); close;
+    saveimage(char('7'+name));
 end
