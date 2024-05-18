@@ -1,5 +1,4 @@
 # Doctoral Thesis Image
-{: align="center"}
 ![image](png/D1.png)  
 1: 応答曲面法の例
 
